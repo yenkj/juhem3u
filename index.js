@@ -21,6 +21,11 @@ const sources = [
     name: '四季',
     url: 'http://us.199301.xyz:6000/4g.m3u'
   },
+    },
+  {
+    name: 'MyTvSuper',
+    url: 'http://us.199301.xyz:6000/super.m3u'
+  },
   {
     name: 'beesport',
     url: 'http://us.199301.xyz:6000/b.m3u'
