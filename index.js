@@ -37,10 +37,10 @@ const sources = [
     name: 'xtb',
     url: 'http://us.199301.xyz:6000/xtb.m3u'
   },
-  {
-    name: 'thetv',
-    url: 'http://us.199301.xyz:6000/ttv.m3u'
-  },
+//  {
+//    name: 'thetv',
+//    url: 'http://us.199301.xyz:6000/ttv.m3u'
+//  },
   {
     name: '电台',
     url: 'http://us.199301.xyz:6000/radio.m3u'
