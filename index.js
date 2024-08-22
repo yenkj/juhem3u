@@ -29,9 +29,13 @@ const sources = [
     name: 'MyTvSuper',
     url: 'http://us.199301.xyz:6000/super.m3u'
   },
+//  {
+//    name: 'beesport',
+//    url: 'http://us.199301.xyz:6000/b_proxy.m3u'
+//  },
   {
-    name: 'beesport',
-    url: 'http://us.199301.xyz:6000/b_proxy.m3u'
+    name: 'xtb',
+    url: 'http://us.199301.xyz:6000/xtb.m3u'
   },
   {
     name: 'thetv',
