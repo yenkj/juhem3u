@@ -5,14 +5,10 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const sources = [
-  {
-    name: 'feng hua',
-    url: 'http://us.199301.xyz:6000/fh.m3u'
-  },
-  {
-    name: '4K8K',
-    url: 'http://us.199301.xyz:6000/4K8K.m3u'
-  },  
+//  {
+//    name: 'feng hua',
+//    url: 'http://us.199301.xyz:6000/fh.m3u'
+//  },  
   {
      name: '央视频',
      url: 'http://us.199301.xyz:6000/ysp.m3u'
@@ -45,6 +41,10 @@ const sources = [
 //    name: 'thetv',
 //    url: 'http://us.199301.xyz:6000/ttv.m3u'
 //  },
+  {
+    name: '4K8K',
+    url: 'http://us.199301.xyz:6000/4K8K.m3u'
+  },
   {
     name: '电台',
     url: 'http://us.199301.xyz:6000/radio.m3u'
