@@ -25,6 +25,10 @@ const sources = [
 //   name: 'xt4g',
 //   url: 'http://us.199301.xyz:6000/xt4g.m3u'
 //  },
+ {
+   name: 'xthami',
+   url: 'http://us.199301.xyz:6000/xthami.m3u'
+  },
 //  {
 //    name: 'MyTvSuper',
 //    url: 'http://us.199301.xyz:6000/xtsuper.m3u'
