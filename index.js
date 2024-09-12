@@ -35,7 +35,7 @@ const sources = [
 //  },  
   {
     name: 'thetv',
-    url: 'http://us.199301.xyz:6000/ttv.m3u'
+    url: 'http://us.199301.xyz:6000/xtttv.m3u'
   },
 //  {
 //    name: 'MyTvSuper',
