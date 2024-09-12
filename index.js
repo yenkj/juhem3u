@@ -29,6 +29,14 @@ const sources = [
    name: 'xthami',
    url: 'http://us.199301.xyz:6000/xthami.m3u'
   },
+  {
+    name: 'thetv',
+    url: 'http://us.199301.xyz:6000/thetv_proxy.m3u'
+  },  
+//  {
+//    name: 'thetv',
+//    url: 'http://us.199301.xyz:6000/ttv.m3u'
+//  },
 //  {
 //    name: 'MyTvSuper',
 //    url: 'http://us.199301.xyz:6000/xtsuper.m3u'
@@ -41,10 +49,6 @@ const sources = [
     name: 'xtb',
     url: 'http://us.199301.xyz:6000/xtb.m3u'
   },
-//  {
-//    name: 'thetv',
-//    url: 'http://us.199301.xyz:6000/ttv.m3u'
-//  },
   {
     name: '4K8K',
     url: 'http://us.199301.xyz:6000/4K8K.m3u'
