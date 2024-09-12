@@ -5,10 +5,10 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const sources = [
-//  {
-//    name: 'feng hua',
-//    url: 'http://us.199301.xyz:6000/fh.m3u'
-//  },  
+  {
+    name: 'feng hua',
+    url: 'http://us.199301.xyz:6000/fh.m3u'
+  },  
 //  {
 //     name: '央视频',
 //     url: 'http://us.199301.xyz:6000/ysp.m3u'
