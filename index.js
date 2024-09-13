@@ -45,13 +45,9 @@ const sources = [
 //    name: 'beesport',
 //    url: 'http://us.199301.xyz:6000/b_proxy.m3u'
 //  },
-//  {
-//    name: 'xtb',
-//    url: 'http://us.199301.xyz:6000/xtb.m3u'
-//  },
   {
-    name: 'streamlink',
-    url: 'http://w.199301.xyz:34400/m3u/xteve.m3u'
+    name: 'xtb',
+    url: 'http://us.199301.xyz:6000/xtb.m3u'
   },
   {
     name: '4K8K',
