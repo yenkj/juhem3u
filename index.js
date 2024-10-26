@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 const sources = [
   {
     name: 'feng hua',
-    url: 'http://us.199301.xyz:6000/tp_fh.m3u'
+    url: 'http://us.199301.xyz:6000/fh.m3u'
   },  
 //  {
 //     name: '央视频',
