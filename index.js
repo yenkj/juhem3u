@@ -62,10 +62,6 @@ const sources = [
 //    url: 'http://us.199301.xyz:6000/xtb.m3u'
 //  },
   {
-    name: 'beee',
-    url: 'http://us.199301.xyz:6000/beee.m3u'
-  },
-  {
     name: '4K8K',
     url: 'http://us.199301.xyz:6000/4K8K.m3u'
   },
