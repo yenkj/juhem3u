@@ -17,18 +17,18 @@ const sources = [
 //    name: 'bptv',
 //    url: 'http://us.199301.xyz:6000/bptv.m3u'
 //  },
-  {
-    name: 'itv',
-    url: 'http://us.199301.xyz:6000/itv_hevc2.m3u'
-  },
+//  {
+//    name: 'itv',
+//    url: 'http://us.199301.xyz:6000/itv_hevc2.m3u'
+//  },
 //  {
 //    name: 'xtbestzb',
 //    url: 'http://us.199301.xyz:6000/xtbestzb.m3u'
 //  },
-// {
-//   name: 'rptv',
-//   url: 'http://us.199301.xyz:6000/rptv.m3u'
-//  },
+ {
+   name: 'yst4',
+   url: 'http://us.199301.xyz:6000/yst4.m3u'
+  },
 //  {
 //    name: '四季',
 //    url: 'http://us.199301.xyz:6000/4g_proxy.m3u'
