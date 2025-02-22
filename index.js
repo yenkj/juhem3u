@@ -13,18 +13,18 @@ const sources = [
 //    name: 'fhrp',
 //    url: 'http://us.199301.xyz:6000/fhrp.m3u'
 //    },
-//  {
-//    name: 'tptv',
-//    url: 'http://us.199301.xyz:6000/tp.m3u'
-//  },
+  {
+    name: 'bptv',
+    url: 'http://us.199301.xyz:6000/bptv.m3u'
+  },
 //  {
 //    name: 'itv',
 //    url: 'http://us.199301.xyz:6000/itv2.m3u'
 //  },
-  {
-    name: 'xtbestzb',
-    url: 'http://us.199301.xyz:6000/xtbestzb.m3u'
-  },
+//  {
+//    name: 'xtbestzb',
+//    url: 'http://us.199301.xyz:6000/xtbestzb.m3u'
+//  },
 // {
 //   name: 'rptv',
 //   url: 'http://us.199301.xyz:6000/rptv.m3u'
