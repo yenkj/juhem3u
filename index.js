@@ -22,8 +22,8 @@ const sources = [
 //    url: 'http://us.199301.xyz:6000/itv2.m3u'
 //  },
   {
-    name: 'itv_hevc',
-    url: 'http://us.199301.xyz:6000/itv_b.m3u'
+    name: 'xtbestzb',
+    url: 'http://us.199301.xyz:6000/xtbestzb.m3u'
   },
 // {
 //   name: 'rptv',
