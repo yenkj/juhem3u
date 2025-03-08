@@ -18,7 +18,7 @@ const sources = [
 async function fetchAndAggregateM3U() {
   try {
     // 并发获取所有源的内容
-    const promises = sources.map(source => axios.get(source.url, { timeout: 10000 })); // 设置 10秒超时
+    const promises = sources.map(source => axios.get(source.url, { timeout: 30000 }));  // 增加超时时间为 30秒
     const responses = await Promise.all(promises);
 
     let aggregatedContent = '#EXTM3U\n#EXTM3U x-tvg-url="https://assets.livednow.com/epg.xml"\n';
