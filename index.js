@@ -5,13 +5,13 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const sources = [
-    { name: 'feng hua', url: 'http://us.199301.xyz:6000/fh.m3u' },
-    { name: 'yst4', url: 'http://us.199301.xyz:6000/yst4.m3u' },
-    { name: 'xt4g', url: 'http://us.199301.xyz:6000/xt4g.m3u' },
-    { name: 'xthami', url: 'http://us.199301.xyz:6000/xthami.m3u' },
-    { name: 'thetv', url: 'http://us.199301.xyz:6000/xtttv.m3u' },
-    { name: '4K8K', url: 'http://us.199301.xyz:6000/4K8K.m3u' },
-    { name: '电台', url: 'http://us.199301.xyz:6000/radio.m3u' }
+  //  { name: 'feng hua', url: 'http://us.199301.xyz:6000/fh.m3u' },
+  //  { name: 'yst4', url: 'http://us.199301.xyz:6000/yst4.m3u' },
+ //   { name: 'xt4g', url: 'http://us.199301.xyz:6000/xt4g.m3u' },
+ //   { name: 'xthami', url: 'http://us.199301.xyz:6000/xthami.m3u' },
+ //   { name: 'thetv', url: 'http://us.199301.xyz:6000/xtttv.m3u' },
+    { name: '4K8K', url: 'http://us.199301.xyz:987/4K8K.m3u' },
+    { name: '电台', url: 'http://us.199301.xyz:987/radio.m3u' }
 ];
 
 // 获取并聚合 m3u 文件内容
