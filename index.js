@@ -8,7 +8,7 @@ const sources = [
     { name: 'feng hua', url: 'http://us.199301.xyz:6000/fh.m3u' },
 //    { name: 'yst4', url: 'http://us.199301.xyz:6000/yst4.m3u' },
 //    { name: 'fhrp', url: 'http://us.199301.xyz:6000/fhrp.m3u' },
-    { name: 'bptv', url: 'http://us.199301.xyz:6000/sx.m3u' },
+    { name: 'bptv', url: 'http://us.199301.xyz:6000/xtsx.m3u' },
     { name: 'bptv', url: 'http://us.199301.xyz:6000/bptv.m3u' },
 //    { name: 'itv', url: 'http://us.199301.xyz:6000/itv_hevc2.m3u' },
 //    { name: 'xtbestzb', url: 'http://us.199301.xyz:6000/xtbestzb.m3u' },
