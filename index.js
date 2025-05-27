@@ -74,8 +74,43 @@ app.get('/', async (req, res) => {
     // 发送 M3U 数据
     res.send(aggregatedContent);
 });
+// ✅ 下载 M3U 文件（和 / 返回的一样，只是设置为下载）
+app.get('/tv.m3u', async (req, res) => {
+    const m3u = await fetchAndAggregateM3U();
+    res.setHeader('Content-Type', 'application/octet-stream');
+    res.setHeader('Content-Disposition', 'attachment; filename="channels.m3u"');
+    res.send(m3u);
+});
+
+// ✅ 下载 TXT 文件（频道名称,链接）
+app.get('/tv.txt', async (req, res) => {
+    const m3u = await fetchAndAggregateM3U();
+
+    const lines = m3u.split('\n');
+    let output = '';
+    let channelName = '';
+
+    for (let line of lines) {
+        line = line.trim();
+        if (line === '#EXTM3U') continue;
+
+        if (line.startsWith('#EXTINF')) {
+            const match = line.match(/#EXTINF:.*,(.*)/);
+            if (match && match[1]) {
+                channelName = match[1];
+            }
+        } else if (line.startsWith('http')) {
+            output += `${channelName},${line}\n`;
+        }
+    }
+
+    res.setHeader('Content-Type', 'application/octet-stream');
+    res.setHeader('Content-Disposition', 'attachment; filename="channels.txt"');
+    res.send(output.trim());
+});
 
 // 启动服务器
 app.listen(PORT, () => {
     console.log(`✅ Server is running on port ${PORT}`);
 });
+
