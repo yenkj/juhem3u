@@ -81,32 +81,40 @@ app.get('/tv.m3u', async (req, res) => {
       res.setHeader('Content-Disposition', 'inline');
       res.send(m3u);
 });
-
-// ✅ 下载 TXT 文件（频道名称,链接）
+// ✅ 下载 TXT 文件（频道名称,链接），自动添加分组
 app.get('/tv.txt', async (req, res) => {
     const m3u = await fetchAndAggregateM3U();
-
     const lines = m3u.split('\n');
-    let output = '';
-    let channelName = '';
 
-    for (let line of lines) {
-        line = line.trim();
-        if (line === '#EXTM3U') continue;
+    let output = '';
+    let currentChannel = '';
+    let currentGroup = '';
+    const grouped = {};
+
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i].trim();
 
         if (line.startsWith('#EXTINF')) {
-            const match = line.match(/#EXTINF:.*,(.*)/);
-            if (match && match[1]) {
-                channelName = match[1];
-            }
+            const nameMatch = line.match(/,(.*)/);
+            const groupMatch = line.match(/group-title="([^"]+)"/);
+
+            currentChannel = nameMatch ? nameMatch[1].trim() : '';
+            currentGroup = groupMatch ? groupMatch[1].trim() : '未分组';
         } else if (line.startsWith('http')) {
-            output += `${channelName},${line}\n`;
+            if (!grouped[currentGroup]) grouped[currentGroup] = [];
+            grouped[currentGroup].push(`${currentChannel},${line}`);
         }
     }
 
-          res.setHeader('Content-Type', 'text/plain; charset=utf-8');
-          res.setHeader('Content-Disposition', 'inline');
-          res.send(output.trim());
+    // 拼接分组输出
+    for (const group in grouped) {
+        output += `${group},#genre#\n`;
+        output += grouped[group].join('\n') + '\n\n';
+    }
+
+    res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+    res.setHeader('Content-Disposition', 'inline');
+    res.send(output.trim());
 });
 
 // 启动服务器
