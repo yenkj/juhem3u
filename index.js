@@ -69,7 +69,7 @@ app.get('/', async (req, res) => {
 
     // 设置响应标头
     res.setHeader('Content-Type', 'text/plain');
-    res.setHeader('Content-Disposition', 'inline; filename="4gtv.txt"');
+    res.setHeader('Content-Disposition', 'inline; filename="tv.txt"');
 
     // 发送 M3U 数据
     res.send(aggregatedContent);
@@ -77,9 +77,9 @@ app.get('/', async (req, res) => {
 // ✅ 下载 M3U 文件（和 / 返回的一样，只是设置为下载）
 app.get('/tv.m3u', async (req, res) => {
     const m3u = await fetchAndAggregateM3U();
-    res.setHeader('Content-Type', 'application/octet-stream');
-    res.setHeader('Content-Disposition', 'attachment; filename="channels.m3u"');
-    res.send(m3u);
+      res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+      res.setHeader('Content-Disposition', 'inline');
+      res.send(m3u);
 });
 
 // ✅ 下载 TXT 文件（频道名称,链接）
@@ -104,9 +104,9 @@ app.get('/tv.txt', async (req, res) => {
         }
     }
 
-    res.setHeader('Content-Type', 'application/octet-stream');
-    res.setHeader('Content-Disposition', 'attachment; filename="channels.txt"');
-    res.send(output.trim());
+          res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+          res.setHeader('Content-Disposition', 'inline');
+          res.send(output.trim());
 });
 
 // 启动服务器
