@@ -9,16 +9,16 @@ const sources = [
 //    { name: 'yst4', url: 'http://us.199301.xyz:6000/yst4.m3u' },
 //    { name: 'fhrp', url: 'http://us.199301.xyz:6000/fhrp.m3u' },
 //    { name: 'bptv', url: 'http://us.199301.xyz:6000/xtsx.m3u' },
-//    { name: 'bptv', url: 'http://us.199301.xyz:6000/nptv.m3u' },
+    { name: 'bptv', url: 'http://us.199301.xyz:6000/nptv.m3u' },
 //    { name: 'bptv', url: 'http://us.199301.xyz:6000/fyus.m3u' },
 //    { name: 'bptv', url: 'http://us.199301.xyz:6000/xtk.m3u' },
 //    { name: '四季', url: 'http://us.199301.xyz:6000/4g_proxy.m3u' },
-//    { name: 'xt4g', url: 'http://us.199301.xyz:6000/xt4g.m3u' },
-//    { name: 'xt4g', url: 'http://us.199301.xyz:6000/xthk.m3u' },
+    { name: 'xt4g', url: 'http://us.199301.xyz:6000/xt4g.m3u' },
+    { name: 'xt4g', url: 'http://us.199301.xyz:6000/xthk.m3u' },
 //    { name: 'xthami', url: 'http://us.199301.xyz:6000/xthami.m3u' },
-//    { name: 'thetv', url: 'http://us.199301.xyz:6000/xtttv.m3u' },
-//    { name: '4K8K', url: 'http://us.199301.xyz:6000/4K8K.m3u' },
-//    { name: '电台', url: 'http://us.199301.xyz:6000/radio.m3u' }
+    { name: 'thetv', url: 'http://us.199301.xyz:6000/xtttv.m3u' },
+    { name: '4K8K', url: 'http://us.199301.xyz:6000/4K8K.m3u' },
+    { name: '电台', url: 'http://us.199301.xyz:6000/radio.m3u' }
 ];
 
 // 获取并聚合 M3U 文件内容
